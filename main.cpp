@@ -151,7 +151,7 @@ bool traverse_the_board(Board* board, int row, int col, int direction, bool* who
 
 
 		if (direction = RIGHT) {
-
+			//tutaj myœlê nad wywo³aniem jeszcze raz funkcji rekurencyjnie ze zmienionymi koordynatami row i col je¿eli znajdê 'r' i gdy dojdê do krawêdzi to zmieniæ whoWin na true
 		}
 		if (direction = LEFT) {
 
@@ -206,6 +206,10 @@ void is_game_over(Board* board) {
 		}
 	}
 
+
+	if (redWins) cout << "YES RED";
+	else if (blueWins) cout << "YES BLUE";
+	else cout << "NO";
 }
 
 
